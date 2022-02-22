@@ -86,6 +86,53 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  margin: 0;
+  padding: 0;
+}
+.app-grid {
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.screen {
+  grid-column: 1/-1;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.screen .previous-operand {
+  font-size: 0.75rem;
+}
+.screen .current-operand {
+  font-size: 1.75rem;
+}
+
+.cal {
+  padding: 5px;
+  display: grid;
+  gap: 0.15rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(120px, auto) repeat(4, 1fr);
+
+  background-color: aqua;
+  border: #000 solid 1px;
+}
+.button-container {
+}
+
+#equal {
+  grid-column: span 2;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +307,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
