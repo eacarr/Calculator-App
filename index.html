@@ -37,32 +37,27 @@
       <div class="title"><h1>Calculator</h1></div>
       <div class="cal">
         <div class="screen">
-          <div class="previous-operand"></div>
-          <div class="current-operand"></div>
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
         </div>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          id="clear"
-          data-operation
-        >
+        <button type="button" class="btn btn-secondary" id="clear" data-clear>
           C
         </button>
         <button
           type="button"
           class="btn btn-secondary"
           id="pos-neg"
-          data-operation
+          data-pos-neg
         >
-          &plus;/&minus;
+          +/-
         </button>
         <button
           type="button"
           class="btn btn-secondary"
           id="percent"
-          data-operation
+          data-percent
         >
-          &percnt;
+          %
         </button>
         <button
           type="button"
@@ -70,7 +65,7 @@
           id="divide"
           data-operation
         >
-          &divide;
+          ÷
         </button>
         <button type="button" class="btn btn-success" id="7" data-number>
           7
@@ -87,7 +82,7 @@
           id="multi"
           data-operation
         >
-          &times;
+          *
         </button>
         <button type="button" class="btn btn-success" id="4" data-number>
           4
@@ -104,7 +99,7 @@
           id="minus"
           data-operation
         >
-          &minus;
+          -
         </button>
         <button type="button" class="btn btn-success" id="1" data-number>
           1
@@ -121,20 +116,15 @@
           id="plus"
           data-operation
         >
-          &plus;
+          +
         </button>
         <button type="button" class="btn btn-success" id="0" data-number>
           0
         </button>
         <button type="button" class="btn btn-success" id="decimal" data-number>
-          &dot;
+          .
         </button>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          id="equal"
-          data-operation
-        >
+        <button type="button" class="btn btn-secondary" id="equal" data-equal>
           =
         </button>
       </div>

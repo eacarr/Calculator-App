@@ -87,8 +87,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(73, 19, 190, 1) 27%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 .app-grid {
   margin-top: 50px;
