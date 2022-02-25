@@ -14,15 +14,19 @@ class Calculator {
     this.operation = undefined;
   }
 
-  delete() {}
-
   // function to show number in operand area
   appendNumber(number) {
+    if (number === "." && this.currentOperand.includes(".")) {
+      return;
+    }
     // show current operand
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
 
   chooseOperation(operation) {
+    if (this.previousOperand !== "") {
+      this.compute();
+    }
     this.previousOperand = `${this.currentOperand} ${operation}`;
     this.currentOperand = "";
     // this.currentText.innerText = "";
